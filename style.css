@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-mario {
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+button {
+    color: white;
+    background-color: #e00d0d;
+    border-radius: 3px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: 30px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.img-mario-luigi {
+    height: 400px;
+}
+
+body {
+    height: 100vh;
+}
+
+.caixa-mae {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 100px;
+    height: 100vh;
+}
+
+.caixa-principal {
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: justify;
+}
+
+.caixa-video {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+video {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.mascara {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+    position: fixed;
+}
+
+.header img {
+    height: 60px;
+
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* MENU */
+.menu-links {
+    display: flex;
+    gap: 30px;
+}
+
+.menu-mario {
+    cursor: pointer;
+}
+
+.link-linkedin img {
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.link-linkedin img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+.header a:hover {
+    color: #c51111;
+    transition: .5s ease;
+}
+
+button:hover {
+    transform: 2s;
+    transition: .5s ease;
+    background-color: #8b1212;
+    transition: 0.5s background-color color ease-in-out;
+}
+
+.form-fale-conosco {
+    background-color: white;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    position: fixed;
+    left: -300px;
+    top: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: left 1s ease-in-out;
+}
+
+input {
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: #18d80f;
+}
+
+textarea {
+    width: 270px;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: #18d80f;
+}
+
+.mascara-form {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    transition: visibility 1s ease-in-out;
+}
+
+@media screen and (max-width: 1000px) {
+    p {
+        display: none;
+    }
+
+    .caixa-mae {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .caixa-principal {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .logo-mario {
+        margin-top: 150px;
+    }
+
+    button {
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
+        margin: 20px;
+
+        .img-mario-luigi {
+            max-width: 80vw;
+            height: auto;
+        }
+
+        .header {
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+            position: relative;
+        }
+
+        .header img {
+            display: none;
+        }
+
+        /* ESCONDE OS LINKS */
+        .menu-links {
+            display: none;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.85);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 10px;
+            gap: 10px;
+            opacity: 0;
+            pointer-events: none;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .menu-links a {
+            font-size: 10px;
+            text-align: center;
+            justify-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        }
+        
+    }
