@@ -34,5 +34,5 @@ Este é um site fictício de serviços de encanamento, inspirado nos personagens
 Link do site: [https://projeto-mario-livid.vercel.app](https://projeto-mario-livid.vercel.app)
 
 
-## 📞 Contato
-Para dúvidas sobre o projeto ou orçamentos para novos trabalhos, entre em contato pelo link do site ou pelo LinkedIn!
+## 🎨 Visual do Projeto
+<img src="https://github.com/ingridalvesfarias/projeto-mario/blob/main/assets/Captura%20de%20tela%202026-02-14%20234106.png" alt="Página do site Super Mario Bros Encanadores" width="600">
